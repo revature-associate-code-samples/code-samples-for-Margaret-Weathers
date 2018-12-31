@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>ERS</display-name>
+  
+  <servlet>
+	<servlet-name>WelcomeFrontController</servlet-name>
+	<servlet-class>com.re.proj1.servlets.LoadWelcomeViewsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>WelcomeFrontController</servlet-name>
+	<url-pattern>*.welcomeView</url-pattern>
+</servlet-mapping>  
+
+<servlet>
+	<servlet-name>EmployeeFrontController</servlet-name>
+	<servlet-class>com.re.proj1.servlets.LoadEmployeeViewsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>EmployeeFrontController</servlet-name>
+	<url-pattern>*.employeeView</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ManagerFrontController</servlet-name>
+	<servlet-class>com.re.proj1.servlets.LoadManagerViewsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ManagerFrontController</servlet-name>
+	<url-pattern>*.managerView</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>EmployeeHome</servlet-name>
+	<servlet-class>com.re.proj1.servlets.LoadEmployeeHomeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>EmployeeHome</servlet-name>
+	<url-pattern>/load-employee-home</url-pattern>
+</servlet-mapping>
+  
+<servlet>
+	<servlet-name>ManagerHome</servlet-name>
+	<servlet-class>com.re.proj1.servlets.LoadManagerHomeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ManagerHome</servlet-name>
+	<url-pattern>/load-manager-home</url-pattern>
+</servlet-mapping> 
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
