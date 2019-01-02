@@ -8,4 +8,4 @@ The ERS is a full-stack web application that allows employees to view and submit
 Trivia Townes is a full-stack multiplayer trivia competition. Players can create or join public game lobbies. Game sessions are managed using Angular and Spring MVC, while leaderboards are persisted with Spring Data.
 
 ### Project 3 - Caliber 2.0
-This updated rendition of Caliber is a microservice based, Spring Boot application with an Angular 6 front end. Eureka, Zuul and Feign Client are used to manage multiple microservices and track the progress of internal Revature associates. Specifically, the Quality Audit service saves individual notes and grades from a weekly evaluation.
+This updated rendition of Caliber is a microservice based, Spring Boot application with an Angular 6 front end. Eureka, Zuul and Feign Client are used to manage multiple microservices and track the progress of internal Revature associates. Specifically, the Quality Audit service saves individual notes and grades from weekly evaluations.
