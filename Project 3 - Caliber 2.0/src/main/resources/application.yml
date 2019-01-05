@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: audit-service   
+  
+  datasource:
+    url: jdbc:h2:mem:caliber;Mode=Oracle
+    platform: h2
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+#    platform: oracle
+#    url: jdbc:oracle:thin:@http://caliber-qa-v2.cbxdukbqdvl0.eu-west-2.rds.amazonaws.com:1521/caliqav2 
+#    username: caliberqav2
+#    password: caliberqav2
+#    driverClassName: oracle.jdbc.driver.OracleDriver
+
+# to use the eureka discovery client with this service
+
+eureka:
+  client:
+#    service-url:
+    default-zone: ${EUREKA_HOME}
+    fetch-registry: false
+    register-with-eureka: true
+
+server:
+  port: 9075
